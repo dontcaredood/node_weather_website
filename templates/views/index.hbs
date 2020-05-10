@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="icon" href="/image/weather_icon.png">
+       <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+        {{>header}}
+        {{>title}}
+        <h4>We provide weather forecast based on location.</h4>
+        <form>
+            <input placeholder="Location" type="text">
+            <button>Search</button>
+        </form>
+        <h4 id="message-1"></h4>
+        <h4 id="message-2"></h4>
+        </div>
+        {{>footer}}
+        <script src="/js/app.js"></script>
+    </body>
+</html>

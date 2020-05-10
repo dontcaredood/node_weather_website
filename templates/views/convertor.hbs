@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Currency Convertor</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="main-content">
+        {{>header}}
+        {{>title}}
+        <form>
+            <input type="text" value="USD">
+            <input type="text" placeholder="Currency" id='valueTwo'>
+            <button>Find</button>
+        </form>
+        <h4 id="converted"></h4>
+        </div>
+        {{>footer}}
+        <script src="/js/convertor.js">
+        </script>
+    </body>
+</html>

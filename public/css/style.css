@@ -1,0 +1,78 @@
+body{
+    background-color: teal;
+    font-family: cursive;
+    max-width: 650;
+    margin: 0 auto;
+    padding: 0 16px ;
+    display: flex;
+    flex-direction: column;
+    
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+.main-content{
+  flex-grow: 1;
+}
+
+
+footer{
+  background-color: whitesmoke;
+  padding : 0 16px;
+  color: black;
+  text-align: center;
+  margin-top: 16px; 
+  margin-bottom: 10px;
+}
+
+
+header{
+  margin-top: 16px;
+  margin-bottom: 16px;
+  
+}
+
+h1{
+  font-size: 38;
+  color:whitesmoke;
+}
+
+h2{
+  font-size: 34;
+  color: antiquewhite;
+}
+
+h3{
+  color: wheat;
+  font-size: 28; 
+}
+
+h4{
+  color:whitesmoke  ;
+  font-size: 22;
+}
+header a{
+    font-size: 26;
+    color: wheat;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.portrait{
+  align-self: center;
+  width: 350px;
+
+}
+input{
+border: 1px solid wheat;
+padding: 8px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+ cursor: pointer;
+ font-family: cursive;
+ border : 1px solid wheat;
+ background: darkgray;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ padding: 8px;
+}
