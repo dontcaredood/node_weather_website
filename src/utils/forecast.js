@@ -8,7 +8,15 @@ const forecast =(latitude,longitude,callback)=>{
         }else if(body.error){
             callback('Please enter valid address to find weather.',undefined)
         } else {
-            callback(undefined,body.current.weather_descriptions+". It is currently "+body.current.temperature+" degrees, but feels like "+body.current.feelslike+" degrees.")
+            const data ={
+                desc : body.current.weather_descriptions,
+                currentTemp : body.current.temperature,
+                feelLikeTemp : body.current.feelslike,
+                humidity : body.current.humidity,
+                day_night : body.current.is_day
+            }
+            callback(undefined,data)
+            //callback(undefined,body.current.weather_descriptions+". It is currently "+body.current.temperature+" degrees, but feels like "+body.current.feelslike+" degrees.")
    }
     })
 }
