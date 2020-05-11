@@ -9,7 +9,7 @@ convert.addEventListener('submit',(e)=>{
     const valueOne = first.value
     const valueTwo = second.value
     result.textContent='Loading...'
-    fetch('http://localhost:3000/currencyConvertor?value='+valueOne,valueTwo).then((response)=>{response.json().then((data)=>{
+    fetch('/currencyConvertor?value='+valueOne,valueTwo).then((response)=>{response.json().then((data)=>{
         if(!data){
            return result.textContent("Please enter proper value")
         }

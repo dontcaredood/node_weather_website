@@ -7,7 +7,7 @@ wordData.addEventListener('submit',(e)=>{
     e.preventDefault()
     const word = search_word.value
     result.textContent='Loading...'
-fetch('http://localhost:3000/wordsearch?word='+word).then((response)=>{
+fetch('/wordsearch?word='+word).then((response)=>{
     response.json().then((data)=>{
         if(!data){
             result.textContent='Enter proper word'
